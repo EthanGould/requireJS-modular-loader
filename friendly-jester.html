@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>requireJS Module Loader</title>
+	<!-- data-main attribute tells require.js to load
+             scripts/main.js after require.js loads. -->
+     <script data-main="scripts/config" src="scripts/lib/require.min.js"></script>
+</head>
+<body>
+	<h1>Friendly Jester Module</h1>
+	<p>enter a friends name to use in the joke</p>
+
+	<form name="joke-filter" method="get">
+		<input name="firstName" placeholder="Friends Name">
+		<select name="limitTo">
+			<option>nerdy</option>
+			<option>explicit</option>
+		</select>
+		<input type="button" name="submit" value="get Joke">
+	</form>
+
+	<p class="js-joke"></p>
+
+</body>
+</html>

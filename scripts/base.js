@@ -1,2 +1,4 @@
-var jQuery = require([ './scripts/lib/jquery.min.js' ]);
+var $ = require([ './scripts/lib/jquery.min.js' ]);
 require([ './scripts/modules/friendly-jester.js' ]);
+require([ './scripts/modules/wotd.js' ]);
+
