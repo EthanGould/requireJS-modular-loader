@@ -1,9 +1,32 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>requireJS Module Loader</title>
+	<!-- data-main attribute tells require.js to load
+             scripts/main.js after require.js loads. -->
+     <script data-main="scripts/config" src="scripts/lib/require.min.js"></script>
 </head>
 <body>
-	<p>Hello World</p>
+	<h1>Friendly Jester</h1>
+	<p>Enter a friends name and select a category to recieve a joke!</p>
+
+	<label>
+		<b>Enter Friends Name:</b>
+		<input name="name" type="text" placeholder="enter friends name">
+	</label>
+	<br>
+	<br>
+	<label>
+		<b>Categories: </b>			
+		<select name="category" type="text">
+			<option>nerdy</option>
+			<option>explicit</option>
+		</select>
+		<input type="button" name="submit" value="Get Joke">
+	</label>
+
+	<div class="js-joke-container">
+		<p class="js-joke"></p>
+	</div>
 </body>
 </html>
