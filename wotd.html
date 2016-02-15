@@ -10,21 +10,34 @@
 
 </head>
 <body>
-	<div class="container">
-		<h1 class="header">Word Of The Day Module</h1>
+	<div class="container js-container">
+		<div class="theme-colors-wrap">
+			<p class="theme-colors-link js-toggle-colors">Theme Colors</p>
+			<ul class="js-theme-colors theme-colors">
+				<li id="first" data-text="#FFFFFF" data-color="#5AC8ED" class="theme-color js-theme-color"></li>
+				<li id="second" data-text="#F1FA50" data-color="#ED7F5A" class="theme-color js-theme-color"></li>
+				<li id="third" data-text="#5AC8ED" data-color="#C85AED" class="theme-color js-theme-color"></li>
+				<li id="fourth" data-text="#525252" data-color="#7FED5A" class="theme-color js-theme-color"></li>
+				<li id="fifth" data-text="#9E9E9E" data-color="#FFFFFF" class="theme-color js-theme-color"></li>
+			</ul>
+		</div>
+		<h1 class="header">Word Of The Day</h1>
+		<h1 class="loading">LOADING...</h1>
 		<div class="word-details">
 			<div class="word-detail">
-				<p class="word js-word">canoodle</p><span class="speech-part js-speech-part">verb</span></p>
+				<p class="word js-word"></p><span class="speech-part js-speech-part"></span>
 			</div>
 			<div class="word-detail">
-			 	<p class="inline-word word js-word">canoodle</p>
-			 	<p class="definition js-definition">to engage in amorous embracing, caressing, and kissing</p>
+				<p>
+			 		<span class="inline-word word js-word"></span>
+			 		<span class="definition js-definition"></span>
+			 	</p>
 			</div>
 			<div class="word-detail">
-				<p class="note">Note: <span class="js-note">this is slightly inappropriate</span></p>
+				<p class="note">Note: <span class="js-note"></span></p>
 			</div>
 			<div class="word-detail">
-				<p class="example">Example: <span class="js-example">The two were found canoodling in the closet</span></p>
+				<p class="example">Example: <span class="js-example"></span></p>
 			</div>
 		</div>
 	</div>
