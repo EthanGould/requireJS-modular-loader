@@ -1,0 +1,50 @@
+p {
+	margin: 0;
+}
+
+.header {
+	text-align: center;
+	font-family: 'Karla', sans-serif;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 15px;
+	border-right: 1px solid lightgrey;
+	border-left: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+
+.word-detail {
+	margin-bottom: 5px;
+	padding: 10px;
+	font-family: 'Karla', sans-serif;
+	font-size: 18px;
+}
+
+p.word {
+	display: inline-block;
+	padding: 0 2px;
+	border-bottom: 2px solid grey;
+	font-size: 32px;
+}
+
+.speech-part {
+	margin-left: 10px;
+	font-weight: 200;
+}
+
+.definition {
+	display: inline-block;
+}
+
+.inline-word.word {
+	display: inline-block;
+	border-right: 1px solid grey;
+	border-bottom: none;
+	padding: 2px 5px;
+	font-size: 18px;
+}
+
+
