@@ -7,6 +7,11 @@ a {
 	color: black;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+}
+
 /**
  * Theme Settings
 */
@@ -21,6 +26,9 @@ a {
 	display: none;
 	list-style: none;
 	margin: 0;
+	width: 30px;
+	float: right;
+	box-shadow: 7px 7px 13px #333;
 }
 
 .theme-colors-link {
