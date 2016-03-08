@@ -1,0 +1,25 @@
+.joke-container {
+	width: 100%;
+	padding: 15px;
+	border: 1px solid lightgrey;
+	font-family: 'Karla', sans-serif;
+	margin: 0 15px 15px 0;
+	box-sizing: border-box;
+}
+
+.joke-header {
+	font-size: 26px;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+form[name="joke-filter"] {
+	margin-bottom: 10px;
+}
+
+@media (min-width: 768px ) {
+	.joke-container {
+		width: 50%;
+		float: left;
+	}
+}

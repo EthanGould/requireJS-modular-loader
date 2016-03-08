@@ -17,7 +17,6 @@ define([ 'modules/joke' ], function() {
 
 	module.getJokeParams = function() {
 		var params = module.$form.serialize();
-		console.log(params);
 		module.getJoke( params );
 	};
 	

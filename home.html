@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage Widget</title>
+	<script src="http://quotesondesign.com/api/3.0/api-3.0.js" type="text/javascript" charset="utf-8"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- data-main attribute tells require.js to load
+             scripts/main.js after require.js loads. -->
+     <script data-main="scripts/config" src="scripts/lib/require.min.js"></script>
+     <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" type="text/css" href="styles/wotd.css">
+     <link rel="stylesheet" type="text/css" href="styles/qotd.css">
+     <link rel="stylesheet" type="text/css" href="styles/joke.css">
+     <link rel="stylesheet" type="text/css" href="styles/home.css">
+
+</head>
+<body>
+	<div class="site-container">
+		<div class="joke-container">
+			<p class="joke-header">Get A Joke</p>
+
+			<form name="joke-filter" method="get">
+				<label> Make it 
+					<select name="limitTo">
+						<option>nerdy</option>
+						<option>explicit</option>
+					</select>
+				</label>
+				<input type="button" name="submit" value="GO">
+			</form>
+
+			<p class="joke-text js-joke">This is some joke content populated for styling</p>
+		</div>
+
+
+		<div class="qotd-container js-qotd-container">
+			<p class="qotd-header">Quote Of The Day</p>
+			<p id="qod-quote" class="qotd-text js-quote"></p>
+		</div>
+
+
+		<div class="wotd-container js-wotd-container">
+			<div class="theme-colors-wrap">
+				<p class="theme-colors-link js-toggle-colors">Theme Colors</p>
+				<ul class="js-theme-colors theme-colors">
+					<li id="first" data-color="#FFFFFF" data-background="#5AC8ED" class="theme-color js-theme-color"></li>
+					<li id="second" data-color="#F1FA50" data-background="#ED7F5A" class="theme-color js-theme-color"></li>
+					<li id="third" data-color="#5AC8ED" data-background="#C85AED" class="theme-color js-theme-color"></li>
+					<li id="fourth" data-color="#525252" data-background="#7FED5A" class="theme-color js-theme-color"></li>
+					<li id="fifth" data-color="#9E9E9E" data-background="#FFFFFF" class="theme-color js-theme-color"></li>
+				</ul>
+			</div>
+			<p class="wotd-header">Word Of The Day</p>
+			<p class="js-wotd-loading">LOADING...</p>
+			<div class="word-details">
+				<div class="word-detail">
+					<p class="word js-word"></p><span class="speech-part js-speech-part"></span>
+				</div>
+				<div class="word-detail">
+					<p>
+				 		<span class="inline-word word js-word"></span>
+				 		<span class="definition js-definition"></span>
+				 	</p>
+				</div>
+				<div class="word-detail">
+					<p class="note">Note: <span class="js-note"></span></p>
+				</div>
+				<div class="word-detail">
+					<p class="example">Example: <span class="js-example"></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

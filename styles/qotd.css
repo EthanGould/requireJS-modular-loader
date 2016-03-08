@@ -1,0 +1,25 @@
+.qotd-container {
+	padding: 15px;
+	border: 1px solid lightgrey;
+	font-family: 'Karla', sans-serif;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+}
+
+.qotd-header {
+	font-size: 26px;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+.qotd-text {
+	line-height: 26px;
+	margin-bottom: 5px;
+}
+
+@media (min-width: 768px ) {
+	.qotd-container {
+		width: calc( 50% - 15px);
+		float: left;
+	}
+}

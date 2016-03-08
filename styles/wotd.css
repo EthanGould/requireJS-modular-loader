@@ -2,21 +2,21 @@ p {
 	margin: 0;
 }
 
-.header {
-	text-align: center;
-	font-family: 'Karla', sans-serif;
-}
-
-.container {
-	max-width: 960px;
+.wotd-container {
+	clear: both;
 	position: relative;
 	margin: 0 auto;
 	padding: 15px;
 	border: 1px solid lightgrey;
 	min-height: 300px;
+	font-size: 30px;
 	background-color: paleturquoise;
 	font-family: 'Karla', sans-serif;
 	transition: background-color 0.3s;
+}
+
+.wotd-header {
+	text-align: center;
 }
 
 .word-detail {
@@ -44,7 +44,7 @@ p.word {
 	font-size: 18px;
 }
 
-.loading {
+.wotd-loading {
 	display: none;
 }
 
@@ -65,6 +65,12 @@ p.word {
 .theme-colors {
 	display: none;
 	list-style: none;
+	margin: 0;
+}
+
+.theme-colors-link {
+	font-size: 14px;
+	margin-bottom: 5px;
 }
 
 .theme-colors-link,

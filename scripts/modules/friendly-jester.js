@@ -13,6 +13,7 @@ require([ 'modules/joke' ], function( joke ){
 
 	module.init = function() {
 		this.eventHandlers();
+		joke.init();
 	};
 
 	module.eventHandlers = function() {

@@ -1,0 +1,6 @@
+theme includes:
+
+background-color
+background-image
+font-family
+color
