@@ -1,4 +1,5 @@
 .joke-container {
+	position: relative;
 	width: 100%;
 	padding: 15px;
 	border: 1px solid lightgrey;
@@ -10,7 +11,6 @@
 .joke-header {
 	font-size: 26px;
 	margin-bottom: 10px;
-	text-decoration: underline;
 }
 
 form[name="joke-filter"] {
@@ -19,7 +19,7 @@ form[name="joke-filter"] {
 
 @media (min-width: 768px ) {
 	.joke-container {
-		width: 50%;
+		width: 40%;
 		float: left;
 	}
 }

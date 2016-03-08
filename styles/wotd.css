@@ -10,13 +10,13 @@ p {
 	border: 1px solid lightgrey;
 	min-height: 300px;
 	font-size: 30px;
-	background-color: paleturquoise;
 	font-family: 'Karla', sans-serif;
 	transition: background-color 0.3s;
 }
 
 .wotd-header {
-	text-align: center;
+	font-size: 26px;
+	margin-bottom: 10px;
 }
 
 .word-detail {

@@ -15,9 +15,9 @@ require([], function() {
 		$example: $( '.js-example' ),
 		$partOfSpeech: $( '.js-speech-part' ),
 		$loading: $( '.js-wotd-loading' ),
-		$themeColorBtn: $( '.js-toggle-colors' ),
+		$themeColorBtn: $( '.js-wotd-container .js-toggle-colors' ),
 		$themeColors: $( '.js-theme-colors' ),
-		$themeColor: $( '.js-theme-color' )
+		$themeColor: $( '.js-wotd-container .js-theme-color' )
 	};
 
 	module.init = function() {
@@ -27,7 +27,7 @@ require([], function() {
 
 	module.eventHandlers = function() {
 		module.$themeColorBtn.click( function() {
-			module.$themeColors.fadeToggle( 200 );
+			module.$container.find( module.$themeColors ).fadeToggle( 200 );
 		});
 
 		module.$themeColor.click( module.applyThemeColor );
