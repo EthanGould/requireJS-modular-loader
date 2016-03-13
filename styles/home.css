@@ -1,4 +1,4 @@
-body {
+body.animate {
 	animation-name: gradientBackground;
 	animation-duration: 30s;
 	animation-iteration-count: infinite;
@@ -31,11 +31,24 @@ ul {
 	background-color: white;
 }
 
+.background-toggle-container {
+	border-radius: 20px;
+	font-family: 'Karla', sans-serif;
+	background-color: initial;
+}
+
 .background-toggle {
 	width: 75px;
+	height: 32px;
+	position: relative;
 	border: 2px solid black;
 	border-radius: 30px;
 	background-color: darkgrey;
+	transition: background-color 0.1s;
+}
+
+.background-toggle span {
+	cursor: pointer;
 }
 
 .toggle-button {
@@ -44,9 +57,52 @@ ul {
 	border-radius: 50%;
 	background-color: lightgrey;
 	border: 1px solid grey;
+	cursor: pointer;
+    transition-duration: 0.3s;
 }
 
+.toggle-button.on {
+	-ms-transform: translate(43px, 0); /* IE 9 */
+    -webkit-transform: translate(43px, 0); /* Safari */
+    transform: translate(43px, 0); /* Standard syntax */
+    transition-duration: 0.3s;
+}
 
+.toggle-on-label {
+	position: absolute;
+	right: 0;
+	top: 6px;
+	right: 6px;
+	opacity: 0;
+}
+
+.animate .background-toggle {
+	background-color: #05E639;
+	transition: background-color 0.1s;
+	transition-delay: 0.2s;
+}
+
+.animate .toggle-on-label {
+	opacity: 1;
+	transition: opacity 0.5s;
+	transition-delay: 0.2s;
+}
+
+.toggle-off-label {
+	position: absolute;
+	right: 0;
+	top: 7px;
+	left: 5px;
+	opacity: 1;
+	transition: opacity 0.5s;
+	transition-delay: 0.2s;
+}
+
+.animate  .toggle-off-label {
+	opacity: 0;
+	transition: opacity 0s;
+	transition-delay: 0s;
+}
 
 /**
  * Theme Settings
